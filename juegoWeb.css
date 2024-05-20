@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel:wght@600&family=Kanit&family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel:wght@600&family=Kanit&family=Righteous&family=Rowdies&display=swap');
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #508c1b;
+}
+
+body {
+    font-family: 'Black Ops One', system-ui;
+    background-image: url("./imagenes/fondo.jpg");
+    background-size: cover;
+} 
+
+.titulo {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    height: 35px;
+    margin: auto;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(211, 133, 25);
+}
+
+.eligePersonaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.cuadroPersonajeDragon {
+    background-color: rgb(164, 170, 171);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 350px;
+    height: 320px;
+    justify-content: center;
+    padding: 5px;
+    border: solid;
+    border-radius: 50%;
+    color: black;
+    font-size: x-large;
+    margin: auto;
+}
+
+.cuadroPersonajeDragon img {
+    width: 270px;
+    height: 245px;
+}
+
+.cuadroPersonajePhoenix {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 300px;
+    justify-content: center;
+    border-radius: 32px;
+    color: white;
+    font-size: large;
+}
+
+.cuadroPersonajePhoenix img {
+    width: 240px;
+    height: 250px;
+}
+
+.cuadroPersonajeKraken {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 32px;
+    color: white;
+    font-size: large;
+}
+
+.cuadroPersonajeKraken img {
+    width: 240px;
+    height: 250px;
+}
+
+.personajes {
+    display: flex;
+    gap: 50px;
+}
+
+.divBotonContinuar {
+    display: flex;
+    width: 180px;
+    height: 35px;
+}
+
+.botonContinuar {
+    width: 300px;
+    height: 50px;
+    border-radius: 32px;
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+    font-family: 'Black Ops One', system-ui;
+    font-size: large;
+    margin: 15px;
+}
+
+.resultadoFinal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 478px;
+    height: 65px;
+    margin: 0 auto;
+    font-size: x-large;
+}
+
+.botonReiniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    font-size: large;
+    background-color: black;
+    color: white;
+    font-family: 'Black Ops One', system-ui;
+    border-radius: 32px;
+    margin-left: 100px;
+}
+
+.personajeElegido {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.vidasPersonajeJugador {
+    height: 380px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: solid;
+    background-color: gray;
+}
+
+.vidasPersonajeEnemigo {
+    height: 380px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: solid;
+    background-color: gray;
+}
+
+#imagenPersonajeSeleccionado {
+    width: 250px;
+    height: 250px;
+}
+
+#imagenPersonajeSeleccionadoEnemigo {
+    width: 250px;
+    height: 250px;
+}
+
+.eligeAtaque {
+    width: 250px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;;
+    font-size: larger;
+}
+
+.botonesAtaques {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.botonFuego {
+    background-color: rgb(185, 48, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 70px;
+    font-size: xx-large;
+    font-family: 'Black Ops One', system-ui;
+    margin: 0 auto;
+    border-radius: 32px;
+    color: white;
+    margin-top: 20px;
+}
+
+.ataquesJugadores {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 32px;
+    font-size: larger;
+    background-color: white;
+    margin-top: 100px;
+}
+
+.vs {
+    font-size: xx-large;
+}
+
+.revisarDatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    font-size: large;
+    background-color: black;
+    color: white;
+    font-family: 'Black Ops One', system-ui;
+    border-radius: 32px;
+    margin-right: 100px;
+}
+
+.botones2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.botonVolver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    font-size: large;
+    background-color: black;
+    color: white;
+    font-family: 'Black Ops One', system-ui;
+    border-radius: 32px;
+    margin-top: 10px;
+}
+
+.verMapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+#mapa {
+    border-radius: 32px;
+    border: solid black;
+}
+
+.flechas {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flechasCentro {
+    display: flex;
+    align-items: center;
+}
+
+.flechaCentral {
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: small;
+    font-family: 'Black Ops One', system-ui;
+    background-color: grey;
+    border: solid;
+}
+
+.flecha {
+    width: 150px;
+    height: 50px;
+    border-radius: 32px;
+    font-size: xx-large;
+    background-color: grey;
+}
+
+@media (max-width: 400px) {
+    .titulo {
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+    }
+
+    .personajes {
+        flex-direction: column;
+    }
+
+    .ataques{
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .resultadoActual {
+        flex-direction: column;
+    }
+}
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>🔥¡MYTHOLOGICAL COMBAT!🌊</title>
+        <link rel="stylesheet" href="./juegoWeb.css">
+    </head>
+    
+    <body>
+        <section id="titulo" class="titulo">
+            <h1 class="titulo">🔥¡MYTHOLOGICAL COMBAT!🌊</h1>
+        </section>
+
+        <section id="personajeElegido" class="personajeElegido">
+            <div class="vidasPersonajeJugador">
+                <h2><img id="personajeJugador">🏆<span id="victoriasJugador">0</span></h2>
+                <img id="imagenPersonajeSeleccionado">
+            </div>
+
+            <div id="vs">
+                <h2 class="vs" ><img src="./imagenes/vs.png"></h2>
+            </div>
+
+            <div class="vidasPersonajeEnemigo">
+                <h2><img id="personajeEnemigo"></span>🏆<span id="victoriasEnemigo">0</span></h2>
+                <img id="imagenPersonajeSeleccionadoEnemigo">
+            </div>
+        </section>
+
+        <section id="resultadoFinal" class="resultadoFinal">
+            <h2><span id="ganador"></span></h2>
+        </section>
+
+        <section id="eligePersonaje" class="eligePersonaje">
+            <h4 class="subtitulo">ELIGE TU PERSONAJE</h4>
+            
+            <div id="contenedorPersonajes" class="personajes">
+            
+            </div>
+
+            <div id="botonContinuar" class="divBotonContinuar">
+                <button class="botonContinuar">CONTINUAR</button>
+            </div>
+        </section>
+
+        <section id="verMapa" class="verMapa">
+            <canvas id="mapa" class="mapa"></canvas>
+            <div class="flechas">
+                <button class="flecha" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">⬆</button>
+                <div class="flechasCentro">
+                    <button class="flecha" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">⬅</button>
+                    <button class="flechaCentral">START</button>
+                    <button class="flecha" onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">➞</button>
+                </div>
+                <button class="flecha" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">⬇</button>
+            </div>
+        </section>
+        
+        <section id="botonesAtaques" class="botonesAtaques">
+            <div id="contenedorAtaques" class="ataques">
+                
+            </div>
+        </section>
+
+        <div id="resultadoActual" class="resultadoActual">
+            <h2><span id="resultadoAtaqueActual"></span></h2>
+        </div>
+
+        <div class="botones2">
+            <div id="botonRevisarDatos" class="botonRevisarDatos">
+                <button id="revisarDatos" class="revisarDatos">VER RESULTADOS</button>
+            </div>
+
+            <div id="reiniciarJuego" class="divbBotonReiniciar">
+                <button class="botonReiniciar">REINICIAR ♻</button>
+            </div>
+        </div>
+
+        <div id="ataquesJugadores" class="ataquesJugadores">
+            <h3>DATOS DEL COMBATE</h3>
+            <h3 id="ataquesDelJuego" class="ataquesDelJuego"></h3>
+        </div>
+
+        <div id="botonVolver" class="botonVolver">
+            <button id="volver" class="volver">VOLVER</button>
+        </div>
+        <script src="./documentoJavaScript/juegoWeb.js"></script>
+    </body>   
+</html>
