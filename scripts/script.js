@@ -51,7 +51,7 @@ let indexPersonajeSeleccionadoEnemigo
 let lienzo = mapa.getContext("2d")
 let intervalo 
 let mapaBackground = new Image()
-mapaBackground.src = "./imagenes/mapa.jpg"
+mapaBackground.src = "images/mapa.jpg"
 let alturaBuscada 
 let anchoMapa = window.innerWidth - 20
 const maximoAnchoMapa = 650
@@ -91,17 +91,17 @@ class Mitological {
     }
 }
 
-let dragon = new Mitological('Dragon', './imagenes/dragon.png', 5, './imagenes/dragon.png')
+let dragon = new Mitological('Dragon', 'images/dragon.png', 5, 'images/dragon.png')
 
-let phoenix = new Mitological('Phoenix', './imagenes/phoenix.png', 5, './imagenes/phoenix.png')
+let phoenix = new Mitological('Phoenix', 'images/phoenix.png', 5, 'images/phoenix.png')
 
-let kraken = new Mitological('Kraken', './imagenes/kraken.png', 5, './imagenes/kraken.png')
+let kraken = new Mitological('Kraken', 'images/kraken.png', 5, 'images/kraken.png')
 
-let dragonEnemigo = new Mitological('Dragon', './imagenes/dragon.png', 5, './imagenes/dragon.png', 520, 25)
+let dragonEnemigo = new Mitological('Dragon', 'images/dragon.png', 5, 'images/dragon.png', 520, 25)
 
-let phoenixEnemigo = new Mitological('Phoenix', './imagenes/phoenix.png', 5, './imagenes/phoenix.png', 270, 20)
+let phoenixEnemigo = new Mitological('Phoenix', 'images/phoenix.png', 5, 'images/phoenix.png', 270, 20)
 
-let krakenEnemigo = new Mitological('Kraken', './imagenes/kraken.png', 5, './imagenes/kraken.png', 430, 180)
+let krakenEnemigo = new Mitological('Kraken', 'images/kraken.png', 5, 'images/kraken.png', 430, 180)
 
 figuras.push(dragon, phoenix, kraken)
 
@@ -206,17 +206,17 @@ function elegirPersonaje() {
     if (inputDragon.checked) {
         personajeSeleccionado.innerHTML = inputDragon.id
         figuraJugador = inputDragon.id
-        imagenPersonajeSeleccionado.src = "./imagenes/dragon.png"
+        imagenPersonajeSeleccionado.src = "images/dragon.png"
 
     } else if (inputPhoenix.checked) {
         personajeSeleccionado.innerHTML = inputPhoenix.id
         figuraJugador = inputPhoenix.id
-        imagenPersonajeSeleccionado.src = "./imagenes/phoenix.png"
+        imagenPersonajeSeleccionado.src = "images/phoenix.png"
 
     } else if (inputKraken.checked) {
         personajeSeleccionado.innerHTML = inputKraken.id
         figuraJugador = inputKraken.id
-        imagenPersonajeSeleccionado.src = "./imagenes/kraken.png"
+        imagenPersonajeSeleccionado.src = "images/kraken.png"
 
     } else {
         alert("¡ELIGE UN PERSONAJE!") 
@@ -337,15 +337,15 @@ function personajeEnemigo(enemigo) {
     ataquesPersonajeEnemigo = enemigo.ataques
 
     if (enemigo === dragonEnemigo) {
-        imagenPersonajeSeleccionadoEnemigo.src = "./imagenes/dragon.png"
+        imagenPersonajeSeleccionadoEnemigo.src = "images/dragon.png"
         indexPersonajeSeleccionadoEnemigo = 0
 
     } else if (enemigo === phoenixEnemigo) {
-        imagenPersonajeSeleccionadoEnemigo.src = "./imagenes/phoenix.png"
+        imagenPersonajeSeleccionadoEnemigo.src = "images/phoenix.png"
         indexPersonajeSeleccionadoEnemigo = 1
 
     } else {
-        imagenPersonajeSeleccionadoEnemigo.src = "./imagenes/kraken.png"
+        imagenPersonajeSeleccionadoEnemigo.src = "images/kraken.png"
         indexPersonajeSeleccionadoEnemigo = 2
     }
     secuenciaAtaque()
@@ -1145,7 +1145,7 @@ function funcionBotonReiniciar() {
 }
 
 function ataquesElegidos() {
-    let verAtaques = document.createElement("h4")
+    let verAtaques = document.createElement("h5")
     verAtaques.innerHTML = "JUGADOR:" + "\n" + ataqueJugador + "\n" + "ENEMIGO:" + "\n" + ataqueEnemigo
     ataquesDelJuego.appendChild(verAtaques)
 }
